@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./icon/apple-icon-180x180.png">
+    <title>HTML Images</title>
+</head>
+<body>
+    <h1>HTML Images</h1>
+    
+    <h2>Example</h2>
+    <img src="./img/Galata Kulesi.jpg">
+
+    <h2>Attributes</h2>
+
+    <h3>The <code>alt</code> Attribute</h3>
+    <img src="./img/Galata Kulesi.jpg" alt="Galata Kulesi">
+
+
+    <h3>The <code>width</code> and <code>height</code> Attribute</h3>
+    <img src="./img/Galata Kulesi.jpg" width="450" height="300">
+
+
+    <h3>The <code>srcset</code>Attribute</h3>
+    <img src="./img/Galata Kulesi.jpg" srcset="./img/Galata Kulesi.jpg, ./img/Galata Kulesi@3x.jpg 3x">
+
+
+    <h3>The <code>loading</code>Attribute</h3>
+    <img src="./img/Galata Kulesi.jpg" loading="lazy">
+
+
+    <h2>The HTML <code>picture</code> Element</h2>
+    <picture>
+        <source srcset="./img/Galata Kulesi.avif" type="image/avif" width="950">
+        <source srcset="./img/Galata Kulesi.webp" type="image/webp" width="850">
+        <source srcset="./img/Galata Kulesi.jpg" type="image/jpeg" width="750">
+        <img src="./img/Galata Kulesi.jpg" width="650">
+
+    </picture>
+
+
+
+</body>
+</html>
